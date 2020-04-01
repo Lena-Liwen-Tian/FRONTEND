@@ -7,8 +7,6 @@ import './NavLinks.css';
 const NavLinks = props => {
   const auth = useContext(AuthContext);
  
-  let showtimesId = "2020-03-22"; 
-  console.log(showtimesId)
   return (
     <ul className="nav-links">
       <li>
@@ -20,7 +18,7 @@ const NavLinks = props => {
           <NavLink to="/places">Theatres</NavLink>
       </li>     
          <li>
-          <NavLink to={`/showtime/${showtimesId}`}>Show Times</NavLink>
+          <NavLink to={`/showtime/2020-03-22`}>Show Times</NavLink>
         </li>
         <li>
         <NavLink to="/reviews" exact>Reviews</NavLink>
