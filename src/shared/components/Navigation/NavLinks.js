@@ -6,10 +6,8 @@ import './NavLinks.css';
 
 const NavLinks = props => {
   const auth = useContext(AuthContext);
-  let showtime = new Date();
-  let m = showtime.getMonth()+1;
-  let month = showtime.getMonth()+1>=10?"":"0";
-  let showtimesId = showtime.getFullYear() + "-" + month + m +"-"+showtime.getDate(); 
+ 
+  let showtimesId = "2020-03-22"; 
   console.log(showtimesId)
   return (
     <ul className="nav-links">
