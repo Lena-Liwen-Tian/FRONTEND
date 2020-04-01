@@ -51,7 +51,7 @@ const Movies = () => {
 
   return(       
     <React.Fragment>
-    <PaginationPage postsPerPage={postsPerPage} totalPosts={LoadedMovies.length} paginate={paginate}/>
+    <PaginationPage postsPerPage={postsPerPage} currentpage={currentPage} totalPosts={LoadedMovies.length} paginate={paginate}/>
     {isLoading && (<div><LoadingSpinner /></div>)}
     {!isLoading && LoadedMovies&&<MovieList items={currentPosts}/>} 
     </React.Fragment>)

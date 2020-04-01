@@ -50,7 +50,7 @@ const UserPlaces = () => {
 
   return(       
     <React.Fragment>
-    <PaginationPage postsPerPage={postsPerPage} totalPosts={LoadedTheatres.length} paginate={paginate}/>
+    <PaginationPage postsPerPage={postsPerPage} totalPosts={LoadedTheatres.length} currentpage={currentPage} paginate={paginate}/>
     {isLoading && (<div><LoadingSpinner /></div>)}
     {!isLoading && LoadedTheatres && <PlaceList items={currentPosts} />}
      </React.Fragment>)
